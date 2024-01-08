@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
@@ -9,8 +10,6 @@
   <body>
     <div id="ton-connect"></div>
     <script type="module">
-      import * as TON_CONNECT_UI from "@tonconnect/ui";
-
       const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
         manifestUrl: 'https://demo-tonconnect.netlify.app/manifest.json',
         buttonRootId: 'ton-connect'
